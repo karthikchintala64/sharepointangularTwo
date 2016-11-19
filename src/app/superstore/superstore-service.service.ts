@@ -15,6 +15,7 @@ export class SuperStoreService {
         return  this._http.get("https://chintalasharepoint.sharepoint.com/sites/TeamSite/_api/web/lists/getbytitle('Superstore%20Sales')/items")
               .map(
                   res => <Sale[]> res.json()
+                  
                 );
   }
 
